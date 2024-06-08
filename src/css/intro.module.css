@@ -1,0 +1,83 @@
+#intro {
+    height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    top: 100px;
+
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 70vh;
+}
+
+.introcontent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 2rem;
+    font: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.name {
+    color: yellow;
+}
+
+.introdunction {
+    font-size: medium;
+    font-weight: 100;
+}
+
+.hirebtn {
+    background-color: white;
+    padding: .75rem 1.5rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 2rem;
+    color: black;
+
+    &:hover {
+        background-color: blue;
+        color: white;
+    }
+}
+
+.active {
+    color: yellow;
+    padding: .5rem;
+    border-bottom: solid yellow;
+}
+
+.hireimg {
+    height: 1rem;
+    margin: 0 .25;
+    object-fit: cover;
+}
+
+@media screen and (max-width:840) {
+    .bg {
+        width: -10vw;
+    }
+
+    .introcontent {
+        font-size: 10vw;
+    }
+
+    .hello {
+        font-size: 4.5vw;
+    }
+}

@@ -1,0 +1,60 @@
+#works {
+    max-width: 45rem;
+    min-height: calc(100vh-4rem);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.workstitle {
+    padding: 1rem 0;
+    font-size: 3rem;
+}
+
+.worksdescription {
+    font-size: .9rem;
+    max-width: 60rem;
+    min-height: calc(100vh-4rem);
+    font-weight: 200;
+}
+
+.worksimgs {
+    max-width: 45rem;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.active {
+    color: yellow;
+    padding: .5rem;
+    border-bottom: solid yellow;
+}
+
+.worksbtn {
+    padding: .5rem 1.5rem;
+    margin: 3rem 0;
+    border-radius: 2rem;
+    background-color: white;
+    color: white;
+    border: none;
+    color: black;
+
+    &:hover {
+        background-color: blue;
+        color: white;
+    }
+}
+
+.worksimg {
+    margin: 1rem;
+    height: 10rem;
+    width: 10rem;
+}
