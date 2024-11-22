@@ -29,7 +29,6 @@ const About = () => {
                     <div className={styles.n}>
                         <AboutCart text="project" value="20+" />
                         <AboutCart text="experince" value=".6+" />
-
                     </div>
                     <div className={styles.n}>
                         <AboutCart text="completed" value="10+" />

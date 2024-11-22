@@ -15,6 +15,7 @@ padding-left: 70px;
     display: flex;
     justify-content: center;
     position: relative;
+z-index: -1;
     flex-direction: column;
     }
     .cardCont>span:first-child{
@@ -30,6 +31,7 @@ padding-left: 70px;
     content: "";
     left: 20px;
 height: 100px;
-position: absolute;
 top: 20px;
+    position: absolute;
+    top: 0;
 }

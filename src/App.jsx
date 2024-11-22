@@ -1,6 +1,6 @@
-import React, { useContext } from 'react'
-import { Navigate, Route, Routes } from 'react-router-dom'
-import './app.css'
+import React from 'react'
+import { Navigate, Route, Routes } from 'react-router-dom';
+import './app.css';
 import ContextProvider from './store/context.jsx'
 import Home from './pages/Home'
 import About from './pages/about'
@@ -13,8 +13,8 @@ function App() {
     return (
         <ContextProvider>
             <Routes>
-                {/* <Route path='/' element={<Navigate to="/home" />} /> */}
-                <Route path='/' element={<Public element={<Home />} />} />
+                <Route path='/' element={<Navigate to="/home" />} />
+                <Route path='/home' element={<Public element={<Home />} />} />
                 <Route path='/about' element={<Public element={<About />} />} />
                 <Route path='/education' element={<Public element={<Education />} />} />
                 <Route path='/project' element={<Public element={<Project />} />} />
