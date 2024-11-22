@@ -13,8 +13,8 @@ function App() {
     return (
         <ContextProvider>
             <Routes>
-                <Route path='/' element={<Navigate to="/home" />} />
-                <Route path='/home' element={<Public element={<Home />} />} />
+                {/* <Route path='/' element={<Navigate to="/home" />} /> */}
+                <Route path='/' element={<Public element={<Home />} />} />
                 <Route path='/about' element={<Public element={<About />} />} />
                 <Route path='/education' element={<Public element={<Education />} />} />
                 <Route path='/project' element={<Public element={<Project />} />} />
