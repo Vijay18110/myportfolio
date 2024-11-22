@@ -13,7 +13,6 @@ import ProjectCard from '../../components/projectCard';
 const About = () => {
     return (
         <div className={styles.cont}>
-            <div className={styles.pagename}><span>Projects</span></div>
             <div className={styles.content}>
                 <ProjectCard img={img1} pname="Student-greivance-system" ptech="react,node,mongodb" />
                 <ProjectCard img={img2} pname="ATM machine webapp" ptech="react,bootstrap,database" />

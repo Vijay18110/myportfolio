@@ -5,7 +5,6 @@ import styles from './index.module.css';
 const About = () => {
     return (
         <div className={styles.cont}>
-            <div className={styles.pagename}><span>Education</span></div>
             <div className={styles.content}>
                 <div className={styles.right}>
                     <h1>Education</h1>

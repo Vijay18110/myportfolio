@@ -10,7 +10,6 @@ const Home = () => {
     return (
         <>
             <div className={styles.cont}>
-                <div className={styles.pagename}><span>Home</span></div>
                 <div className={styles.content}>
                     <div>
                         <h1>Hello,</h1>

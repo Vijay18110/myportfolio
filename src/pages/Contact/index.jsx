@@ -5,7 +5,6 @@ const Contact = () => {
     return (
         <>
             <div className={styles.cont}>
-                <div className={styles.pagename}><span>Contact</span></div>
                 <div className={styles.content}>
                     <div className={styles.imgCont}>
                     </div>

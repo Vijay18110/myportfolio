@@ -11,7 +11,6 @@ import { FaTwitter } from "react-icons/fa";
 const About = () => {
     return (
         <div className={styles.cont}>
-            <div className={styles.pagename}><span>About</span></div>
             <div className={styles.content}>
                 <div className={styles.right}>
                     <h1>
