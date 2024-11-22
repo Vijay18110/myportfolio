@@ -4,14 +4,20 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+img{
+width: 100%;
+height: 100%;
+}
 body{
-  border: 5px solid black;
+min-width: 390px;
 }
 
 nav {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -10px;
+  left: -10px;
+  z-index: 100;
+
   bottom: 0;
   width: 300px;
 }
@@ -21,18 +27,21 @@ nav {
   top: 0;
   left: 0;
   bottom: 0;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   width: 300px;
+z-index: 100;
   height: 100vh;
   background:white;
+  background-image: linear-gradient(90deg, #4458dc 0, #854fee), radial-gradient(circle at top left, #4458dc, #854fee);
+
 }
 
 button {
   outline: none;
+  z-index: 100;
+
+  background-image: linear-gradient(90deg, #4458dc 0, #854fee), radial-gradient(circle at top left, #4458dc, #854fee);
+
   border: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   cursor: pointer;
   position: absolute;
   top: 18px;
@@ -40,18 +49,23 @@ button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: transparent;
+  /* background: transparent; */
+
 }
 
 ul,
 li {
   margin: 0;
+  z-index: 100;
+
   padding: 0;
 }
 
 ul {
   padding: 25px;
   position: absolute;
+  z-index: 100;
+
   top: 100px;
   width: 230px;
 }
@@ -62,26 +76,31 @@ li {
   display: flex;
   align-items: center;
   cursor: pointer;
+  z-index: 100;
+
 }
 .icon-placeholder {
   width: 40px;
+  z-index: 100;
+
   height: 40px;
   border-radius: 50%;
   flex: 40px 0;
-color: #854fee;
+  color: white;
   margin-right: 20px;
 }
 
 .text-placeholder {
   border-radius: 5px;
-  background-image: linear-gradient(90deg, #4458dc 0, #854fee), radial-gradient(circle at top left, #4458dc, #854fee);
-background-clip: text;
-color: transparent;
+color: white;
 font-size: 1rem;
 text-transform: capitalize;
   width: 200px;
   height: 20px;
+font-weight: 600;
   flex: 1;
+  z-index: 100;
+
 }
 
 .refresh {
@@ -96,5 +115,7 @@ text-transform: capitalize;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  z-index: 100;
+
+ cursor: pointer;
 }

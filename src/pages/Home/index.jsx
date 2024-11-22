@@ -7,11 +7,10 @@ import { GrDownload } from 'react-icons/gr';
 import { Link } from 'react-router-dom';
 import resume from '../../assets/r2updatedrecently.pdf'
 const Home = () => {
-    const { manuName } = useContext(ctx)
     return (
         <>
             <div className={styles.cont}>
-                <div className={styles.pagename}><span>{manuName}</span></div>
+                <div className={styles.pagename}><span>Home</span></div>
                 <div className={styles.content}>
                     <div>
                         <h1>Hello,</h1>
@@ -21,10 +20,9 @@ const Home = () => {
                         </p>
                     </div>
                     <div className={styles.imgCont}>
-                        <img src={img} alt="pic" />
+                        {/* <img src={img} alt="pic" /> */}
                     </div>
                 </div>
-
                 <div className={styles.nn}>
                     <a href={resume} className={styles.btnCont}>
                         <span className={styles.btnCont_name}>download cv</span> <span className={styles.icon}><GrDownload size={20} /></span>

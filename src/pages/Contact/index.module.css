@@ -1,0 +1,95 @@
+.cont{
+padding: 10px 100px;
+height: 100vh;
+}
+::-webkit-scrollbar{
+display:none;}
+.pagename{
+display: flex;
+width: 50%;
+margin: 0 auto;
+font-size: 2rem;
+justify-content: center;
+color: white;
+filter: brightness(120%);
+align-items: center;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+background-image: linear-gradient(90deg, #4458dc 0, #854fee), radial-gradient(circle at top left, #4458dc, #854fee);
+}
+.content{
+    margin-top: 50px;
+display: flex;
+justify-content: space-between;
+}
+
+.content>div h1::first-letter{
+    background-image: linear-gradient(90deg, #4458dc 0, #854fee), radial-gradient(circle at top left, #4458dc, #854fee);
+    background-clip: text;
+color: transparent;
+text-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+font-size: 70px;
+}
+.content>div>p{
+letter-spacing: 1px;
+font-size: 1.3rem;
+font-family: serif;
+}
+
+
+
+.imgCont{
+background-image: url('../../assets/vijaypic1.jpg.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top;
+/* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
+box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+transition: all .3s;
+filter: brightness(120%);
+height: 500px;
+border-radius: 20px;
+width: 400px;
+transition: all .7s linear;
+&:hover{
+filter: brightness(140%);
+transform: rotate(30deg);
+}
+}
+.right{
+width: 50%;
+display: flex;
+z-index: 1;
+row-gap: 20px;
+flex-direction: column;
+}
+
+
+@media screen and (max-width:1024px){
+.cont{
+width: 95%;
+margin: 0 auto;
+padding: 10px;
+}
+.content{
+display: flex;
+justify-content: center;
+flex-direction: column;
+gap: 20px;
+}
+.imgCont{
+width: 80%;
+margin: 0 auto;
+}
+.right{
+width: 80%;
+margin: 0 auto;
+}
+.pagename{
+width: 80%;
+}
+}
+
+
+
+

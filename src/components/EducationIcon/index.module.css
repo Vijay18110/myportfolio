@@ -1,0 +1,19 @@
+.icon{
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(118, 85, 225, .3);
+    background-color: #fff;
+    display: flex;
+    font-size: 20px;
+    height: 40px;
+    justify-content: center;
+color: blue;
+    left: 0;
+    top: 20px;
+    line-height: 40px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 40px;
+    z-index: 1;
+}

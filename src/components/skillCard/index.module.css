@@ -1,0 +1,31 @@
+
+.mainCont{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.skillCard{
+    align-items: center;
+    background-image: linear-gradient(90deg, #4458dc 0, #854fee), radial-gradient(circle at top left, #4458dc, #854fee);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(118, 85, 225, .3);
+    display: flex;
+    height: 80px;
+margin: 10px;
+    justify-content: center;
+    transition: all .5s cubic-bezier(.63,.05,.43,1.7);
+    width: 80px;
+color: #fff;
+font-weight: 700;
+transition: all .3s ease-in-out;
+
+&:hover{
+transform: rotate(45deg);
+}
+}
+.c{
+color: black;
+font-weight: 500;
+text-transform: capitalize;
+}

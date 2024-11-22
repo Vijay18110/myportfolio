@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import './app.css'
-import ContextProvider, { ctx } from './store/context.jsx'
+import ContextProvider from './store/context.jsx'
 import Home from './pages/Home'
 import About from './pages/about'
 import Contact from './pages/Contact'

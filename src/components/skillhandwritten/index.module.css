@@ -1,0 +1,28 @@
+.cont{display: flex;
+gap: 30px;
+margin-top: 40px;
+flex-wrap: wrap;
+}
+.hand{
+    font-family: Handwritten2, sans-serif;
+    font-size: 36px;
+    text-shadow: 0 10px 30px #000;
+transform: rotate(330deg);
+transition: all .3s ease-in;
+margin: 20px;
+&:hover{
+    transform: rotate(350deg);
+}
+}
+.hand::first-letter{
+    background-image: linear-gradient(90deg, #4458dc 0, #854fee), radial-gradient(circle at top left, #4458dc, #854fee);
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(118, 85, 225, .3);
+    display: inline-block;
+    height: 42px;
+    padding: 10px;
+    width: 42px;
+color: white;
+font-family: Handwritten2, sans-serif;
+
+}
