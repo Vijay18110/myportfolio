@@ -44,6 +44,7 @@ justify-content: end;
 
 /* background-color: #4458dc; */
 }
+
 .imgCont{
 background-image: url('../../assets/vijay2.png.jpg');
 background-position:top;
@@ -80,6 +81,7 @@ height: 50px;
 display: flex;
 padding-left: 10px;
  align-items: center;
+z-index: -1;
 }
  .icon{
 width: 50px;
@@ -93,6 +95,31 @@ color: hsl(260, 89%, 46%);
 justify-content: center;
 align-items: center;
 }
+
+/* .typingnaimation{
+font-family: monospace;
+white-space: nowrap;
+overflow: hidden;
+border-right:2px solid;
+width: 0;
+animation: typing 4s steps(30,end),blink 0.5s step-end infinite alternate;
+} */
+/* @keyframes typing {
+from{
+width: 0;
+}
+to{
+width: 100%;
+}
+}
+@keyframes blink {
+    from{
+border-color: transparent;
+}
+to{
+border-color: black;
+}
+} */
 
 @media screen and (min-width:1024px) and (max-width:1610px) {
 .cont{

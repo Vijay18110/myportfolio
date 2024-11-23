@@ -10,10 +10,10 @@ const variants = {
   }
 };
 
-export const Navigation = () => (
+export const Navigation = ({ toggle }) => (
   <motion.ul variants={variants}>
     {itemIds.map((i, index) => (
-      <MenuItem i={index} key={i} text={i} />
+      <MenuItem toggle={toggle} i={index} key={i} text={i} />
     ))}
   </motion.ul>
 );

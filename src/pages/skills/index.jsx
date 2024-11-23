@@ -11,10 +11,10 @@ const About = () => {
                         Skills
                     </h1>
                     <div className={styles.cont}>
-                        {Skills.map((s) => <SkillCart key={s.id} simg={s.simg} sname={s.sname} />)}
+                        {Skills.map((s, index) => <SkillCart num={index} key={s.id} simg={s.simg} sname={s.sname} />)}
                     </div>
                     <div className={styles.cont}>
-                        <Handw />
+                        <Handw num={1} />
                     </div>
                 </div>
 

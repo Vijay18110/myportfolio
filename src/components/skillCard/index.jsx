@@ -1,13 +1,19 @@
 import React from 'react'
 import styles from './index.module.css';
-const SkillCart = ({ simg, sname }) => {
+import { motion } from 'framer-motion';
+
+const SkillCart = ({ simg, sname, num }) => {
     return (
-        <div className={styles.mainCont}>
+        <motion.div
+            initial={{ x: 200 }}
+            transition={{ duration: .1 * (num + 1) }}
+            animate={{ x: 0 }}
+            className={styles.mainCont}>
             <div className={styles.skillCard}>
                 <span> {simg}</span>
             </div>
             <span className={styles.c}>{sname}</span>
-        </div>
+        </motion.div>
     )
 }
 export default SkillCart;

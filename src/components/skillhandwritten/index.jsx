@@ -1,16 +1,21 @@
 import React from 'react'
 import styles from './index.module.css';
+import { motion } from 'framer-motion';
 const Handw = () => {
     return (
         <>
-            <div className={styles.cont}>
-                <div className={styles.hand}>Logical reasoning</div>
-                <div className={styles.hand}>version control</div>
-                <div className={styles.hand}>debuging </div>
-                <div className={styles.hand}>clean coding</div>
-                <div className={styles.hand}>Rest APIs</div>
-                <div className={styles.hand}>Problem solving</div>
-            </div>
+            <motion.div
+                initial={{ y: 300 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 1 }}
+                className={styles.cont}>
+                <motion.div className={styles.hand}>Logical reasoning</motion.div>
+                <motion.div className={styles.hand}>version control</motion.div>
+                <motion.div className={styles.hand}>debuging </motion.div>
+                <motion.div className={styles.hand}>clean coding</motion.div>
+                <motion.div className={styles.hand}>Rest APIs</motion.div>
+                <motion.div className={styles.hand}>Problem solving</motion.div>
+            </motion.div>
         </>
     )
 }
