@@ -44,15 +44,12 @@ display: flex;
 flex-wrap: wrap;
 gap: 40px;
 }
-
 @media screen and (min-width:480px) and (max-width:1024px) {
-
 .cont1{
 width: 95%;
 padding: 10px;
 margin: 0 auto;
 }
-
 }
 @media screen and (max-width:480px){
     .cont1{

@@ -35,6 +35,7 @@ export const MenuItem = ({ i, text, toggle }) => {
   const style = { border: `2px solid ${colors[i]}` };
   return (
     <motion.li
+
       onClick={() => onNavigate(text)}
       variants={variants}
       whileHover={{ scale: 1.1 }}

@@ -9,10 +9,11 @@ const Contact = React.lazy(() => import('./pages/Contact'));
 const Skill = React.lazy(() => import('./pages/skills'));
 const Project = React.lazy(() => import('./pages/Project'));
 const Public = React.lazy(() => import('./routes/Public'));
+import Loader from './components/Loader/loader.jsx';
 function App() {
     return (
         <ContextProvider>
-            <Suspense>
+            <Suspense fallback={<Loader />}>
                 <Routes>
                     <Route path='/' element={<Navigate to="/home" />} />
                     <Route path='/home' element={<Public element={<Home />} />} />

@@ -1,0 +1,45 @@
+.mainCont {
+    box-sizing: border-box;
+height: 100vh;
+    background-color: white
+}
+.ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: blue;
+    text-shadow: 0 0 10px blue;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 130px;
+    height: 130px;
+    border: 1px solid #807f7d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.ring::before {
+    content: "";
+    position: absolute;
+    border-top: 3px solid blue;
+    border-left: 3px solid blue;
+    top: -2px;
+    height: 100%;
+    border-radius: 50%;
+    width: 100%;
+    animation: rotate 1s linear 0s infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
