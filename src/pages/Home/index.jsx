@@ -1,12 +1,8 @@
 import React, { useContext, useState } from 'react'
 import styles from './index.module.css';
-import { Sidebar } from '../../components/sidebar/Example';
-import { ctx } from '../../store/context';
-import img from '../../assets/vijay2.png.jpg'
 import { GrDownload } from 'react-icons/gr';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion'
-import resume from '../../assets/r2updatedrecently.pdf'
+import resume from '../../assets/project/r6.pdf';
 const Home = () => {
 
     const [text, setText] = useState("a Software Engineer".split(' '));
