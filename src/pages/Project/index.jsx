@@ -8,7 +8,9 @@ import img6 from '../../assets/logos/Screenshot6.png';
 import img7 from '../../assets/logos/Screenshot7.png';
 import img8 from '../../assets/logos/Screenshot8.png';
 import img9 from '../../assets/logos/Screenshot9.png';
-// import img11 from '../../assets/logos/Screenshot11.png';
+import img13 from '../../assets/logos/Screenshot13.png';
+import img11 from '../../assets/logos/Screenshot11.png';
+import img12 from '../../assets/logos/chat.png';
 import ProjectCard from '../../components/projectCard';
 const About = () => {
     return (
@@ -21,7 +23,10 @@ const About = () => {
                 <ProjectCard img={img5} pname="Student-greivance-system" ptech="react,node,mongodb" />
                 <ProjectCard img={img6} pname="Flipkart Clone" ptech="react,node,mongodb" />
                 <ProjectCard img={img7} pname="password generator" ptech="react" />
-                <ProjectCard img={img8} pname="social media app" ptech="react" />
+                <ProjectCard img={img9} pname="todo app" ptech="react" />
+                <ProjectCard img={img11} pname="phone book" ptech="react" />
+                <ProjectCard img={img12} pname="chat app" ptech="react,node,mongodb" />
+                <ProjectCard img={img13} pname="credentials app" ptech="react,firebase" />
             </div>
         </div >
     )
