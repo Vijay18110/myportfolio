@@ -10,6 +10,7 @@ import img8 from '../../assets/logos/Screenshot8.png';
 import img9 from '../../assets/logos/Screenshot9.png';
 import img13 from '../../assets/logos/Screenshot13.png';
 import img11 from '../../assets/logos/Screenshot11.png';
+import img14 from '../../assets/logos/Screenshot14.png';
 import img12 from '../../assets/logos/chat.png';
 import ProjectCard from '../../components/projectCard';
 const About = () => {
@@ -27,6 +28,7 @@ const About = () => {
                 <ProjectCard img={img11} pname="phone book" ptech="react" />
                 <ProjectCard img={img12} pname="chat app" ptech="react,node,mongodb" />
                 <ProjectCard img={img13} pname="credentials app" ptech="react,firebase" />
+                <ProjectCard img={img14} pname="nest ecommercial webapp" ptech="react,firebase,mongodb,redux" />
             </div>
         </div >
     )
