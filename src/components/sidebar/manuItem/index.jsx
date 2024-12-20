@@ -29,13 +29,12 @@ export const MenuItem = ({ i, text, toggle }) => {
   const naviagte = useNavigate();
   const onNavigate = (p) => {
     naviagte(`/${text}`);
-    toggle();
   }
   const { GetManuName } = React.useContext(ctx);
   const style = { border: `2px solid ${colors[i]}` };
   return (
     <motion.li
-      onClick={() => onNavigate(text)}
+      onClick={() => { onNavigate(text) }}
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}

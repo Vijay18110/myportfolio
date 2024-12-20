@@ -4,17 +4,17 @@ import { MenuItem } from "../manuItem";
 const variants = {
   open: {
     transition: { staggerChildren: 0.07, delayChildren: 0.2 },
-    animate: { display: "block" }
+    // animate: { display: "block" }
   },
   closed: {
     transition: { staggerChildren: 0.05, staggerDirection: -1 },
-    animate: { display: "none" }
+    // animate: { display: "none" }
 
   }
 };
 
 export const Navigation = ({ toggle }) => (
-  <motion.ul variants={variants}>
+  <motion.ul variants={variants} onClick={() => toggle()} >
     {itemIds.map((i, index) => (
       <MenuItem toggle={toggle} i={index} key={i} text={i} />
     ))}
