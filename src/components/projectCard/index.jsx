@@ -1,30 +1,34 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './index.module.css';
-import { motion } from 'framer-motion'
+// import { motion } from 'framer-motion'
 import { FaChrome, FaPlus } from "react-icons/fa";
-const ProjectCard = ({ img, pname, ptech }) => {
-
+import { useNavigate } from 'react-router-dom';
+const ProjectCard = ({ img, pname, ptech, url }) => {
+    const navigate = useNavigate();
+    // const handleClick = () => {
+    //     navigate('');
+    // }
     return (
         <>
-            <motion.div
+            <div
                 initial={{ borderRadius: "50%" }}
                 animate={{ borderRadius: "0%" }}
                 className={styles.cartCont}>
-                <motion.img
+                <img
                     initial={{ borderRadius: "50%" }}
                     animate={{ borderRadius: "0%" }}
                     src={img} alt="" />
                 <span className={styles.plus}><FaPlus /></span>
-                {<div className={styles.onhover} >
+                <div className={styles.onhover}>
                     <div className={styles.text}>
                         <span>{pname}</span>
                         <span>{ptech}</span>
                     </div>
-                    <span className={styles.iconCont}><FaChrome /></span>
-                </div>}
-            </motion.div>
+                    <a href={url}>  <span className={styles.iconCont}><FaChrome /></span>
+                    </a>
+                </div>
+            </div>
         </>
     )
 }
-
-export default ProjectCard
+export default ProjectCard;

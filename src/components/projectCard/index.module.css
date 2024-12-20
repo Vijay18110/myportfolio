@@ -5,13 +5,12 @@
     padding: 10px;
     width: 100%;
 display: flex;
-z-index: -1;
+z-index: 1;
 height: 400px;
 object-fit: cover;
 justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 position: relative;
-
 }
 .onhover{
 position: absolute;
@@ -29,6 +28,11 @@ border-radius: 10px;
 padding:10px 30px;
 transition:all .5s ease-in;
 bottom: 0px;
+opacity: 0;
+}
+.cartCont:hover .onhover{
+     opacity: 1;
+     bottom: 20px;
 }
 
 
@@ -75,13 +79,13 @@ font-weight: 500;
 
 @media screen and  (max-width:480px) {
 .cartCont{
-
-width: 100%;}
+width: 90%;
+margin: 0 auto;
+}
 .text span{
 width: 100%;
 font-size: 12px !important;
 }
-
 .onhover{
 width: 90%;
 }

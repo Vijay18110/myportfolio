@@ -17,18 +17,18 @@ const About = () => {
     return (
         <div className={styles.cont}>
             <div className={styles.content}>
-                <ProjectCard img={img1} pname="Student-greivance-system" ptech="react,node,mongodb" />
-                <ProjectCard img={img2} pname="ATM machine webapp" ptech="react,bootstrap,database" />
-                <ProjectCard img={img3} pname="Text Editor" ptech="react,database" />
-                <ProjectCard img={img4} pname="Unbrew" ptech="react and bootstrap" />
-                <ProjectCard img={img5} pname="Student-greivance-system" ptech="react,node,mongodb" />
-                <ProjectCard img={img6} pname="Flipkart Clone" ptech="react,node,mongodb" />
-                <ProjectCard img={img7} pname="password generator" ptech="react" />
-                <ProjectCard img={img9} pname="todo app" ptech="react" />
-                <ProjectCard img={img11} pname="phone book" ptech="react" />
-                <ProjectCard img={img12} pname="chat app" ptech="react,node,mongodb" />
-                <ProjectCard img={img13} pname="credentials app" ptech="react,firebase" />
-                <ProjectCard img={img14} pname="nest ecommercial webapp" ptech="react,firebase,mongodb,redux" />
+                <ProjectCard url="https://student-grievance.netlify.app/" img={img1} pname="Student-greivance-system" ptech="react,node,mongodb" />
+                <ProjectCard url="https://vijayatm.netlify.app/" img={img2} pname="ATM machine webapp" ptech="react,bootstrap,database" />
+                <ProjectCard url="" img={img3} pname="Text Editor not live now" ptech="react,database" />
+                <ProjectCard url="" img={img4} pname="Unbrew not live" ptech="react and bootstrap" />
+                <ProjectCard url="https://main--vnportfolio.netlify.app/" img={img5} pname="my initial portfolio" ptech="react,node,mongodb" />
+                <ProjectCard url="" img={img6} pname="Flipkart Clone not live now" ptech="react,node,mongodb" />
+                <ProjectCard url="https://main--vnpasswordgenerator.netlify.app/" img={img7} pname="password generator" ptech="react" />
+                <ProjectCard url="" img={img9} pname="todo app not live now" ptech="react" />
+                <ProjectCard url="https://phonebookweb.netlify.app/" img={img11} pname="phone book" ptech="react" />
+                <ProjectCard url="" img={img12} pname="chat app not live now" ptech="react,node,mongodb" />
+                <ProjectCard url="https://credentials-manager-webapp.netlify.app/" img={img13} pname="credentials app" ptech="react,firebase" />
+                <ProjectCard url="" img={img14} pname="nest ecommercial webapp not live" ptech="react,firebase,mongodb,redux" />
             </div>
         </div >
     )
