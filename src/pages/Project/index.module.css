@@ -42,7 +42,6 @@ margin: 0 auto;
         }
 .content{
 width:100%;
-
 grid-template-columns:repeat(1,1fr)
 }
      }
