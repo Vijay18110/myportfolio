@@ -21,8 +21,8 @@ const ProjectCard = ({ img, pname, ptech, url }) => {
                 <span className={styles.plus}><FaPlus /></span>
                 <div className={styles.onhover}>
                     <div className={styles.text}>
-                        <span>{pname}</span>
-                        <span>{ptech}</span>
+                        <span className={styles.fontSize}>{pname}</span>
+                        <span className={styles.fontSize}>{ptech}</span>
                     </div>
                     <a href={url}>  <span className={styles.iconCont}><FaChrome /></span>
                     </a>

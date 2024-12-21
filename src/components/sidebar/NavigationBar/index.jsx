@@ -12,7 +12,6 @@ const variants = {
 
   }
 };
-
 export const Navigation = ({ toggle }) => (
   <motion.ul variants={variants} onClick={() => toggle()} >
     {itemIds.map((i, index) => (
@@ -20,5 +19,4 @@ export const Navigation = ({ toggle }) => (
     ))}
   </motion.ul>
 );
-
 const itemIds = ["home", "project", "about", "education", "skills", "contact"];
