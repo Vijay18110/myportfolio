@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './index.module.css';
-import Switch from '../../pages/toggle';
 import Sidebar2 from '../../pages/sidebarnew';
+import Switch from '../../pages/toggle';
 const NavBar = () => {
     const [toggle, setToggle] = React.useState(false);
     return (
