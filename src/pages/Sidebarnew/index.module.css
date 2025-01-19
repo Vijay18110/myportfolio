@@ -1,0 +1,13 @@
+.sidebarCont {
+  position: absolute;
+  z-index: 100;
+  width: 300px;
+  height: 100vh;
+  background-image: linear-gradient(90deg, #4458dc 0, #854fee),
+    radial-gradient(circle at top left, #4458dc, #854fee);
+}
+.sidebarCont2 {
+  height: 100vh;
+  position: absolute;
+  height: calc(100vh-300px);
+}
