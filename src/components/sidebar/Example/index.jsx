@@ -23,7 +23,6 @@ const sidebar = {
     }
   }
 };
-
 export const Sidebar = () => {
   const [isOpen, toggleOpen] = React.useState(false);
   const containerRef = useRef(null);

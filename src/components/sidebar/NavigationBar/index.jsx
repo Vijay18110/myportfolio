@@ -12,10 +12,10 @@ const variants = {
 
   }
 };
-export const Navigation = ({ toggle }) => (
+export const Navigation = ({ toggle, setToggle }) => (
   <motion.ul variants={variants} onClick={() => toggle()} >
     {itemIds.map((i, index) => (
-      <MenuItem toggle={toggle} i={index} key={i} text={i} />
+      <MenuItem setToggle={setToggle} toggle={toggle} i={index} key={i} text={i} />
     ))}
   </motion.ul>
 );

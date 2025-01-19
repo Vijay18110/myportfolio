@@ -25,10 +25,11 @@ const variants = {
   }
 };
 const colors = [<TiHomeOutline size={40} />, <GrProjects size={40} />, <MdOutlineRoundaboutRight size={40} />, <MdCastForEducation size={40} />, <GiSkills size={40} />, <RiContactsFill size={40} />,];
-export const MenuItem = ({ i, text, toggle }) => {
+export const MenuItem = ({ i, text, toggle, setToggle }) => {
   const naviagte = useNavigate();
   const onNavigate = (p) => {
     naviagte(`/${text}`);
+    setToggle();
   }
   const { GetManuName } = React.useContext(ctx);
   const style = { border: `2px solid ${colors[i]}` };

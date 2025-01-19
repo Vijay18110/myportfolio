@@ -20,7 +20,6 @@ const About = () => {
                 <ProjectCard url="https://student-grievance.netlify.app/" img={img1} pname="Student-greivance-system" ptech="react,node,mongodb" />
                 <ProjectCard url="https://vijayatm.netlify.app/" img={img2} pname="ATM machine webapp" ptech="react,bootstrap,database" />
                 <ProjectCard url="" img={img3} pname="Text Editor not live now" ptech="react,database" />
-                <ProjectCard url="" img={img4} pname="Unbrew not live" ptech="react and bootstrap" />
                 <ProjectCard url="https://main--vnportfolio.netlify.app/" img={img5} pname="my initial portfolio" ptech="react,node,mongodb" />
                 <ProjectCard url="" img={img6} pname="Flipkart Clone not live now" ptech="react,node,mongodb" />
                 <ProjectCard url="https://main--vnpasswordgenerator.netlify.app/" img={img7} pname="password generator" ptech="react" />
