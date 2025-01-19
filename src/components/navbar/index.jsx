@@ -7,10 +7,9 @@ const NavBar = () => {
     return (
         <>
             <div className={styles.cont1}>
-                <Toggle2 setToggle={setToggle} />
+                {/* <Toggle2 setToggle={setToggle} /> */}
             </div>
-            {toggle && <Sidebarnew setToggle={setToggle} />
-            }
+            {/* {toggle && <Sidebarnew setToggle={setToggle} />  } */}
         </>
     )
 }
