@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import styles from './index.module.css';
 import { GrDownload } from 'react-icons/gr';
 import { motion } from 'framer-motion'
-import resume from '../../assets/project/r6.pdf';
+import resume from '../../assets/r2updatedrecently.pdf';
 const Home = () => {
 
     const [text, setText] = useState("a Software Engineer".split(' '));

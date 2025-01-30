@@ -14,8 +14,9 @@ const About = () => {
                 </div>
                 <div className={styles.left}>
                     <h1> Experience</h1>
-                    <EducationCart num="4" trans="-400" year="Jan-2024 to Sep-2024" course="MERN Stack (web developer)" uname="Zn Infotech (Lucknow)" />
-                    <EducationCart num="5" trans="-400" year="Sep-2024 to Feb-2025" course="MERN Stack (web developer)" uname="Softlew smart solution (Lucknow)" />
+                    <EducationCart num="3" trans="-400" year="Dec-2024 to Present" course="MERN Stack (web developer)" uname="Papaya Coders Private Limited (Lucknow)" />
+                    <EducationCart num="5" trans="-400" year="Sep-2024 to Feb-2025" course="MERN Stack (web developer Internship)" uname="Softlew smart solution (Lucknow)" />
+                    <EducationCart num="4" trans="-400" year="Jan-2024 to Sep-2024" course="MERN Stack (web developer Internship)" uname="Zn Infotech (Lucknow)" />
                 </div>
             </div>
         </div >
