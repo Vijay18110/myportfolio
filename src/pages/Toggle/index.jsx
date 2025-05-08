@@ -61,22 +61,22 @@ const StyledWrapper = styled.div`
     transition-delay: calc(0s + 0.35s),0s;
   }
 
-  #checkbox:checked + .toggle .bar--top {
-    bottom: calc(50% - 4px/ 2);
-    transform: rotate(135deg);
-    transition-delay: 0s,calc(0s + 0.35s);
-  }
+  // #checkbox:checked + .toggle .bar--top {
+  //   bottom: calc(50% - 4px/ 2);
+  //   transform: rotate(135deg);
+  //   transition-delay: 0s,calc(0s + 0.35s);
+  // }
 
-  #checkbox:checked + .toggle .bar--middle {
-    opacity: 0;
-    transition-duration: 0s;
-    transition-delay: calc(0s + 0.35s);
-  }
+  // #checkbox:checked + .toggle .bar--middle {
+  //   opacity: 0;
+  //   transition-duration: 0s;
+  //   transition-delay: calc(0s + 0.35s);
+  // }
 
-  #checkbox:checked + .toggle .bar--bottom {
-    top: calc(50% - 4px/ 2);
-    transform: rotate(225deg);
-    transition-delay: 0s,calc(0s + 0.35s);
-  }`;
+  // #checkbox:checked + .toggle .bar--bottom {
+  //   top: calc(50% - 4px/ 2);
+  //   transform: rotate(225deg);
+  //   transition-delay: 0s,calc(0s + 0.35s);
+  // }`;
 
 export default Toggle2;

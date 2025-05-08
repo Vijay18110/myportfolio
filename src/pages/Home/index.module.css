@@ -1,200 +1,213 @@
-.cont{
-padding: 10px 100px;
+.cont {
+  padding: 10px 100px;
 }
-::-webkit-scrollbar{
-display:none;}
-.pagename{
-display: flex;
-width: 50%;
-margin: 0 auto;
-font-size: 2rem;
-justify-content: center;
-color: white;
-filter: brightness(120%);
-align-items: center;
-box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-background-image: linear-gradient(90deg, #4458dc 0, #854fee), radial-gradient(circle at top left, #4458dc, #854fee);
+::-webkit-scrollbar {
+  display: none;
 }
-.content{
-    margin-top: 50px;
-display: flex;
-justify-content: space-between;
+.pagename {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 2rem;
+  justify-content: center;
+  color: white;
+  filter: brightness(120%);
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  background-image: linear-gradient(90deg, #4458dc 0, #854fee),
+    radial-gradient(circle at top left, #4458dc, #854fee);
 }
-
-.content>div h1::first-letter{
-    background-image: linear-gradient(90deg, #4458dc 0, #854fee), radial-gradient(circle at top left, #4458dc, #854fee);
-    background-clip: text;
-color: transparent;
-text-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-font-size: 70px;
-}
-.content>div>p{
-letter-spacing: 1px;
-font-size: 1.3rem;
-font-family: serif;
-}
-.content div:first-child{
-    width: 50%;
-    }
-.content div:last-child{
-display: flex;
-background-color: hsla(232, 68%, 56%,.2);
-justify-content: end;
+.content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.imgCont{
-background-image: url('../../assets/vijay2.png.jpg');
-background-position:top;
-background-repeat: no-repeat;
- height:500px;
-width: 400px;
-box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-transition: all .3s;
-border-radius: 20px;
-&:hover{
-filter: brightness(120%);
-transform: translateX(-50px);
+.content > div h1::first-letter {
+  background-image: linear-gradient(90deg, #4458dc 0, #854fee),
+    radial-gradient(circle at top left, #4458dc, #854fee);
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  font-size: 70px;
 }
+.content > div > p {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  font-family: serif;
+}
+.content div:first-child {
+  width: 50%;
+}
+.content div:last-child {
+  display: flex;
+  background-color: hsla(232, 68%, 56%, 0.2);
+  justify-content: end;
 }
 
+.imgCont {
+  background-image: url("../../assets/vijay2.png.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: all 0.3s;
+  border-radius: 20px;
+  &:hover {
+    filter: brightness(120%);
+    transform: translateX(-50px);
+  }
+}
 
 .btnCont {
-    background-image: linear-gradient(90deg, rgb(68, 88, 220) 0px, rgb(133, 79, 238)), radial-gradient(circle at left top, rgb(68, 88, 220), rgb(133, 79, 238));
-    box-shadow: rgba(133, 24, 36, 0.3) 0px 6px 10px;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-text-decoration: none;
-border-radius: 2rem;
-    position: relative;
-    text-align: left;
-    text-transform: uppercase;
-    width: 200px;
-height: 50px;
-display: flex;
-padding-left: 10px;
- align-items: center;
-z-index: 1;
+  background-image: linear-gradient(
+      90deg,
+      rgb(68, 88, 220) 0px,
+      rgb(133, 79, 238)
+    ),
+    radial-gradient(circle at left top, rgb(68, 88, 220), rgb(133, 79, 238));
+  box-shadow: rgba(133, 24, 36, 0.3) 0px 6px 10px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 2rem;
+  position: relative;
+  text-align: left;
+  text-transform: uppercase;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  z-index: 1;
 }
- .icon{
-width: 50px;
-position: absolute;
-height: 50px;
-border-radius: 50%;
-right: 0;
-background-color:white;
-display: flex;
-color: hsl(260, 89%, 46%);
-justify-content: center;
-align-items: center;
+.icon {
+  width: 50px;
+  position: absolute;
+  height: 50px;
+  border-radius: 50%;
+  right: 0;
+  background-color: white;
+  display: flex;
+  color: hsl(260, 89%, 46%);
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (min-width:1024px) and (max-width:1610px) {
-.cont{
-padding: 20px 100px;
-}
+@media screen and (min-width: 1024px) and (max-width: 1610px) {
+  .cont {
+    padding: 20px 100px;
+  }
 }
 
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .content{
-     display: flex;
-flex-direction: column;
-    }
-    .content div:first-child{
-        width: 80%;
-margin: 0 auto;
-padding: 10px;
-order: 2;
-        }
-        .content div:last-child{
-            width: 80%;
-margin: 0 auto;
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content div:first-child {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    order: 2;
+  }
+  .content div:last-child {
+    width: 80%;
+    margin: 0 auto;
     order: 1;
-            }
-.imgCont{
-width: 100%;
-background-size: cover;
-display: flex;
-justify-content: center;
- margin: 0 auto;
+  }
+  .imgCont {
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .nn {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .pagename {
+    width: 80%;
+    margin: 0 auto;
+    background-image: linear-gradient(90deg, #4458dc 0, #854fee),
+      radial-gradient(circle at top left, #4458dc, #854fee);
+    padding: 0;
+  }
 }
-.nn{
-width: 80%;
-margin: 0 auto;
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content div:first-child {
+    width: 100%;
+    order: 2;
+  }
+
+  .imgCont {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-size: cover;
+  }
+  .nn {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .pagename {
+    width: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(90deg, #4458dc 0, #854fee),
+      radial-gradient(circle at top left, #4458dc, #854fee);
+
+    padding: 0;
+  }
 }
-.pagename{
-width: 80%;
-margin: 0 auto;
-background-image: linear-gradient(90deg, #4458dc 0, #854fee), radial-gradient(circle at top left, #4458dc, #854fee);
-padding: 0;
+
+@media screen and (max-width: 480px) {
+  .cont {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-right: 20px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content div:first-child {
+    width: 100%;
+    order: 2;
+  }
+  .imgCont {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-size: cover;
+  }
+  .nn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .pagename {
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+    background-image: linear-gradient(90deg, #4458dc 0, #854fee),
+      radial-gradient(circle at top left, #4458dc, #854fee);
+
+    padding: 0;
+  }
 }
-    }
-        @media screen and (min-width:480px) and (max-width:768px) {
-
-            .content{
-             display: flex;
-        flex-direction: column;
-            }
-            .content div:first-child{
-                width: 100%;
-        order: 2;
-                }
-
-        .imgCont{
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-        background-size: cover;
-        }
-        .nn{
-        width: 100%;
-        margin: 0 auto;
-        }
-        .pagename{
-        width: 100%;
-        margin: 0 auto;
-        background-image: linear-gradient(90deg, #4458dc 0, #854fee), radial-gradient(circle at top left, #4458dc, #854fee);
-
-        padding: 0;
-        }
-            }
-
-            @media screen and (max-width:480px){
-.cont{
-width: 95%;
- margin: 0 auto;
-padding: 20px;
-margin-right: 20px;
-}
-                .content{
-                 display: flex;
-            flex-direction: column;
-                }
-                .content div:first-child{
-
-width: 100%;
-                     order: 2;
-                    }
-            .imgCont{
-                width: 200px;
-                height: 200px;
-                border-radius: 50%;
-margin: 0 auto;
-            background-size: cover;
-            }
-            .nn{
-            width: 100%;
-             display: flex;
-justify-content: center;
-            }
-            .pagename{
-            width: 100%;
-            margin: 0 auto;
-display: none;
-            background-image: linear-gradient(90deg, #4458dc 0, #854fee), radial-gradient(circle at top left, #4458dc, #854fee);
-
-            padding: 0;
-            }
-                }
