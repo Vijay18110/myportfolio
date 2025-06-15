@@ -47,9 +47,9 @@ const Home = () => {
                     initial={{ x: -300 }}
                     animate={{ x: 0 }}
                     className={styles.nn}>
-                    <Link target='_blank' to={resume} className={styles.btnCont}>
+                    <a target='_blank' href={resume} className={styles.btnCont}>
                         <span className={styles.btnCont_name}>download cv</span> <span className={styles.icon}><GrDownload size={20} /></span>
-                    </Link>
+                    </a>
                 </motion.div>
             </div>
         </>
