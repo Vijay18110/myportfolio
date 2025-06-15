@@ -24,7 +24,7 @@ const ProjectCard = ({ img, pname, ptech, url }) => {
                         <span className={styles.fontSize}>{pname}</span>
                         <span className={styles.fontSize}>{ptech}</span>
                     </div>
-                    <a href={url}>  <span className={styles.iconCont}><FaChrome /></span>
+                    <a target='_blank' href={url}>  <span className={styles.iconCont}><FaChrome /></span>
                     </a>
                 </div>
             </div>

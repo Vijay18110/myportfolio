@@ -35,6 +35,21 @@
     margin-right: 20px;
   }
 }
+.headingCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #4458dc;
+}
+.heading {
+  font-size: 1.5rem;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background-color: #4458dc;
+}
 @media screen and (max-width: 480px) {
   .cont {
     width: 100%;

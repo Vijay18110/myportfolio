@@ -11,12 +11,23 @@ import img9 from '../../assets/logos/Screenshot9.png';
 import img13 from '../../assets/logos/Screenshot13.png';
 import img11 from '../../assets/logos/Screenshot11.png';
 import img14 from '../../assets/logos/Screenshot14.png';
+import img16 from '../../assets/logos/image.png';
+import img17 from '../../assets/Project/image.png';
+import img19 from '../../assets/My-Portfolio_files/image.png';
+import img18 from '../../assets/image.png';
 import img12 from '../../assets/logos/chat.png';
 import ProjectCard from '../../components/projectCard';
 const About = () => {
     return (
         <div className={styles.cont}>
+            {/* <div className='${styles.headingCont}'>
+                <h1 className={styles.heading}>Projects</h1>
+            </div> */}
             <div className={styles.content}>
+                <ProjectCard url="https://cp.tantrash.com/#/Dashboard" img={img16} pname="Associate Panel" ptech="react.js,redux.js and bootstrap" />
+                <ProjectCard url="https://dev.ravorganics.com/" img={img17} pname="Organic Web app" ptech="react,redux,bootstrap" />
+                <ProjectCard url="https://propertyatm.in/" img={img18} pname="Property ATM" ptech="react,redux,bootstrap" />
+                <ProjectCard url="https://customer.ravgroup.org/" img={img19} pname="Customer Panel" ptech="react,node,bootstrap" />
                 <ProjectCard url="https://student-grievance.netlify.app/" img={img1} pname="Student-greivance-system" ptech="react,node,mongodb" />
                 <ProjectCard url="https://vijayatm.netlify.app/" img={img2} pname="ATM machine webapp" ptech="react,bootstrap,database" />
                 <ProjectCard url="" img={img3} pname="Text Editor not live now" ptech="react,database" />

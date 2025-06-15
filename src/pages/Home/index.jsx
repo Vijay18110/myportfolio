@@ -2,7 +2,8 @@ import React, { useContext, useState } from 'react'
 import styles from './index.module.css';
 import { GrDownload } from 'react-icons/gr';
 import { motion } from 'framer-motion'
-import resume from '../../assets/r2updatedrecently.pdf';
+import resume from './VijayJun.pdf';
+import { Link } from 'react-router-dom';
 const Home = () => {
 
     const [text, setText] = useState("a Software Engineer".split(' '));
@@ -46,9 +47,9 @@ const Home = () => {
                     initial={{ x: -300 }}
                     animate={{ x: 0 }}
                     className={styles.nn}>
-                    <a href={resume} className={styles.btnCont}>
+                    <Link target='_blank' to={resume} className={styles.btnCont}>
                         <span className={styles.btnCont_name}>download cv</span> <span className={styles.icon}><GrDownload size={20} /></span>
-                    </a>
+                    </Link>
                 </motion.div>
             </div>
         </>

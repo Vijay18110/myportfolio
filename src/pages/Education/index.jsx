@@ -19,7 +19,6 @@ const About = () => {
                     <EducationCart num="2" trans="400" year="2019-2021" course="Intermediate (PCM)" uname="Om Kamal Public School Inter College" />
                     <EducationCart num="2" trans="400" year="2017-2019" course="Matriculation" uname="Om Kamal Public School Inter College" />
                 </div>
-
             </div>
         </div >
     )
