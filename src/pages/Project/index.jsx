@@ -12,7 +12,7 @@ import img13 from '../../assets/logos/Screenshot13.png';
 import img11 from '../../assets/logos/Screenshot11.png';
 import img14 from '../../assets/logos/Screenshot14.png';
 import img16 from '../../assets/logos/image.png';
-import img17 from '../../assets/Project/image.png';
+import img17 from '../../assets/project/image.png';
 import img19 from '../../assets/My-Portfolio_files/image.png';
 import img18 from '../../assets/image.png';
 import img12 from '../../assets/logos/chat.png';
