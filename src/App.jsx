@@ -10,21 +10,25 @@ const Skill = React.lazy(() => import('./pages/skills'));
 const Project = React.lazy(() => import('./pages/Project'));
 const Public = React.lazy(() => import('./routes/Public'));
 import Loader from './components/Loader/loader.jsx';
+import CenteredSettings from './components/Settings.jsx';
 function App() {
     return (
-        <ContextProvider>
-            <Suspense fallback={<Loader />}>
-                <Routes>
-                    <Route path='/' element={<Navigate to="/home" />} />
-                    <Route path='/home' element={<Public element={<Home />} />} />
-                    <Route path='/about' element={<Public element={<About />} />} />
-                    <Route path='/education' element={<Public element={<Education />} />} />
-                    <Route path='/project' element={<Public element={<Project />} />} />
-                    <Route path='/contact' element={<Public element={<Contact />} />} />
-                    <Route path='/skills' element={<Public element={<Skill />} />} />
-                </Routes>
-            </Suspense>
-        </ContextProvider>
+        <>
+            {/* <CenteredSettings /> */}
+            <ContextProvider>
+                <Suspense fallback={<Loader />}>
+                    <Routes>
+                        <Route path='/' element={<Navigate to="/home" />} />
+                        <Route path='/home' element={<Public element={<Home />} />} />
+                        <Route path='/about' element={<Public element={<About />} />} />
+                        <Route path='/education' element={<Public element={<Education />} />} />
+                        <Route path='/project' element={<Public element={<Project />} />} />
+                        <Route path='/contact' element={<Public element={<Contact />} />} />
+                        <Route path='/skills' element={<Public element={<Skill />} />} />
+                    </Routes>
+                </Suspense>
+            </ContextProvider>
+        </>
     )
 }
 export default App

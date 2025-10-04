@@ -1,100 +1,244 @@
-.cartCont {
-  background-color: #fff;
-  border: 2px solid #e1e3e1;
-  height: 100%;
-  padding: 10px;
-  width: 100%;
-  display: flex;
-  height: 400px;
-  z-index: 1;
-  object-fit: cover;
-  justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+.cardContainer {
   position: relative;
-}
-.onhover {
-  position: absolute;
+  width: 100%;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 10px;
-  background-color: #f3f6fc;
-  border: 2px solid #e1e3e1;
+  background: var(--bs-body-bg, #fff);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.cardContainer:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Project Image */
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  border-radius: 20px;
+}
+
+.cardContainer:hover .image {
+  transform: scale(1.1);
+
+  filter: blur(2px) brightness(0.8);
+}
+
+/* Floating Plus Icon */
+.plusIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: linear-gradient(135deg, #6f42c1, #854fee);
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(111, 66, 193, 0.4);
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.plusIcon:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+
+/* Hover Overlay */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  display: flex;
   justify-content: space-between;
-  width: 95%;
-  background-color: #f3f6fc;
-  border: 2px solid #e1e3e1;
-  border-radius: 10px;
-  padding: 10px 20px;
-  transition: all 0.5s ease-in;
-  bottom: 0px;
+  align-items: center;
+  padding: 12px 20px;
   opacity: 0;
+  transition: all 0.4s ease-in-out;
 }
-.cartCont:hover .onhover {
+
+.cardContainer:hover .overlay {
   opacity: 1;
-  bottom: 20px;
+  bottom: 25px;
 }
 
-.iconCont {
-  width: 40px;
-  height: 40px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  background-image: linear-gradient(90deg, #4458dc 0, #854fee),
-    radial-gradient(circle at top left, #4458dc, #854fee);
-}
-.plus {
-  width: 40px;
-  height: 40px;
-  color: white;
-  position: absolute;
-  display: flex;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  right: 30px;
-  top: 30;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-image: linear-gradient(90deg, #4458dc 0, #854fee),
-    radial-gradient(circle at top left, #4458dc, #854fee);
-}
-
-.text {
+/* Text Section */
+.textBlock {
   display: flex;
   flex-direction: column;
 }
-.text span:first-child {
-  color: black;
-  font-size: 16px;
-  font-weight: 500;
+
+.projectName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
-.text span:last-child {
-  color: black;
-  font-weight: 300;
-  font-size: 14px;
+.projectTech {
+  font-size: 0.9rem;
+  color: #e0e0e0;
 }
-@media screen and (max-width: 480px) {
-  .cartCont {
-    width: 90%;
-    margin: 0 auto;
+
+/* Icon Button */
+.iconCircle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4458dc, #854fee);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(111, 66, 193, 0.3);
+}
+
+.iconCircle:hover {
+  transform: scale(1.15);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .cardContainer {
+    height: 280px;
   }
 
-  .onhover {
-    width: 90%;
+  .overlay {
+    width: 92%;
+    padding: 8px 15px;
   }
-  .fontSize {
-    font-size: 10px;
+
+  .projectName {
+    font-size: 0.95rem;
   }
+
+  .projectTech {
+    font-size: 0.8rem;
+  }
+}
+
+.cardContainer {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.image {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.plusIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  padding: 6px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.cardContainer:hover .overlay {
+  opacity: 1;
+}
+
+.iconCircle {
+  background: white;
+  color: black;
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 38, 61, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  text-align: left;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.modalImage {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.modalLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
 }

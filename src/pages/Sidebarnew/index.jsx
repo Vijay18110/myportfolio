@@ -6,6 +6,7 @@ import { MdDelete } from 'react-icons/md';
 import { GrCut } from 'react-icons/gr';
 import { TiUserDelete } from 'react-icons/ti';
 import { GiCrossMark } from 'react-icons/gi';
+import Container from '../../components/Container';
 const Sidebarnew = ({ setToggle }) => {
     return (
         <>

@@ -4,6 +4,7 @@ import { motion, sync, useCycle } from "framer-motion";
 import { MenuToggle } from "../Toggle";
 import { Navigation } from "../NavigationBar";
 import { useDimensions } from "../../../hooks/use-dimesions";
+import Container from "../../Container";
 const sidebar = {
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
@@ -28,15 +29,17 @@ export const Sidebar = () => {
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
   return (
-    <motion.nav
-      initial={false}
-      animate={isOpen ? "open" : "closed"}
-      custom={height}
-      ref={containerRef}
-    >
-      <motion.div className="background" variants={sidebar} />
-      <Navigation toggle={() => toggleOpen(!isOpen)} />
-      <MenuToggle toggle={() => toggleOpen(!isOpen)} />
-    </motion.nav>
+    <>
+      <motion.nav
+        initial={false}
+        animate={isOpen ? "open" : "closed"}
+        custom={height}
+        ref={containerRef}
+      >
+        <motion.div className="background" variants={sidebar} />
+        <Navigation toggle={() => toggleOpen(!isOpen)} />
+        <MenuToggle toggle={() => toggleOpen(!isOpen)} />
+      </motion.nav>
+    </>
   );
 };

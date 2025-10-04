@@ -6,7 +6,7 @@ const Public = ({ element }) => {
     return (
         <Container>
             <NavBar />
-            <Outlet />
+
             <div>{element}</div>
         </Container>
     )

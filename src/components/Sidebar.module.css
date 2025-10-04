@@ -1,0 +1,84 @@
+/* === Overlay (dimmed background) === */
+.overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 38, 61, 0.5);
+  z-index: 1050;
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+  transition: background-color 0.3s ease;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24'><circle cx='12' cy='12' r='10' fill='white' stroke='red' stroke-width='2'/><path d='M7 7L17 17M17 7L7 17' stroke='red' stroke-width='2' stroke-linecap='round'/></svg>")
+      16 16,
+    auto;
+}
+
+.overlay:hover {
+  background-color: rgba(46, 38, 61, 0.6);
+}
+
+/* === Overlay without background (for non-blocking mode) === */
+.overlayNot {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1040;
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+}
+
+/* === Sidebar container === */
+.sidebarContainer {
+  width: 400px;
+  max-width: 100%;
+  height: 100vh;
+  background-color: var(--bs-body-bg, #fff);
+  backdrop-filter: blur(8px);
+  z-index: 1060;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  box-shadow: -8px 0 25px rgba(0, 0, 0, 0.25);
+  cursor: default;
+  transition: background-color 0.4s ease;
+}
+
+/* === Sidebar inner content === */
+.sidebar {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.sidebarTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--bs-heading-color, #212529);
+}
+
+.sidebarSubtitle {
+  color: var(--bs-secondary-color, #6c757d);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* === Close button === */
+.btnClose {
+  background: none !important;
+  border: none !important;
+  font-size: 1.2rem !important;
+  color: #dc3545 !important;
+  opacity: 0.8;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btnClose:hover {
+  transform: scale(1.15);
+  opacity: 1;
+}
